@@ -1,0 +1,13 @@
+service: serveless
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  handle-auth:
+    handler: index.handler
+
+resources:
+  Resources:
